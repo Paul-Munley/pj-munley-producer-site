@@ -1,4 +1,6 @@
 * {
+  font-size: 100%;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -6,15 +8,38 @@
 .wrapper {
   width: 100%;
   height: 100vh;
-  display: grid;
+  /* position: absolute; */
+  display: grid; 
 }
 
 body {
   background: aqua;
 }
 
+/*.page-header {
+}
+
+/* .main-nav {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  width: fit-content;
+  justify-content: center;
+  text-align: center;
+  /* align-items: center; 
+} */
+
+.main-nav ul {
+  text-align: center;
+}
+
+.main-nav li {
+  display: inline-block;
+}
+
 .page-header img {
   display: flex;
-  width: 75%;
-  height: 25%;
+  justify-content: center;
+  width: 100%;
+  height: auto;
 }
