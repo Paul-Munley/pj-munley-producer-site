@@ -8,7 +8,6 @@
 .wrapper {
   width: 100%;
   height: 100vh;
-  /* position: absolute; */
   display: grid; 
 }
 
@@ -16,24 +15,20 @@ body {
   background: aqua;
 }
 
-/*.page-header {
-}
-
-/* .main-nav {
-  display: flex;
-  justify-content: center;
+.main-nav {
+  height: 3vh;
   background-color: white;
-  width: fit-content;
-  justify-content: center;
-  text-align: center;
-  /* align-items: center; 
-} */
+}
 
 .main-nav ul {
   text-align: center;
+  vertical-align: middle;
+  padding: 1em 1em;
 }
 
 .main-nav li {
+  font-size: 1.5em;
+  
   display: inline-block;
 }
 
