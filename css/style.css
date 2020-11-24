@@ -16,6 +16,7 @@ body {
 }
 
 .main-nav {
+  z-index: 1;
   height: 3vh;
   background-color: white;
 }
@@ -24,17 +25,17 @@ body {
   text-align: center;
   vertical-align: middle;
   padding: 1em 1em;
+  z-index: 1;
 }
 
 .main-nav li {
   font-size: 1.5em;
-  
   display: inline-block;
 }
 
-.page-header img {
-  display: flex;
-  justify-content: center;
+.hero-img {
+  margin-top: auto;
+  object-fit: cover;
   width: 100%;
   height: auto;
 }
