@@ -9,8 +9,8 @@
 header {
   background-color: #F2F2F2;
   display: flex;
-  justify-content: space-between;
-  /* align-items: center; */
+  justify-content: flex-end;
+  align-items: center;
   padding: 30px 10%;
 }
 
@@ -19,14 +19,22 @@ header {
   max-height: 100%;
   max-width: 100%;
   object-fit: cover;
+  margin-right: auto;
 /*   height: 60px;
   width: 60px; */
+}
+
+ul {
+  list-style: none;
+  justify-content: space-around;
+}
+
+li a {
+  /* display: inline-block;*/
+  
 }
 
 h1, h2 {
   font-family: 'Roboto Slab', serif;
 }
 
-li {
-  display: inline-block;
-}
