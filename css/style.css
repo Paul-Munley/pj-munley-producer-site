@@ -3,14 +3,28 @@
   margin: 0;
   padding: 0;
   background-color: aquamarine;
+  font-family: 'Roboto', sans-serif;
 }
 
 header {
-  background-color: white;
+  background-color: #F2F2F2;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-between;
+  /* align-items: center; */
   padding: 30px 10%;
+}
+
+.logo {
+  cursor: pointer;
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+/*   height: 60px;
+  width: 60px; */
+}
+
+h1, h2 {
+  font-family: 'Roboto Slab', serif;
 }
 
 li {
