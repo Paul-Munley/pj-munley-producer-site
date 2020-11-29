@@ -125,8 +125,18 @@ h1, h2 {
 
 .main-info {
   display: grid;
+  grid: auto / 50% 50%;
+  justify-items: center;
+  /* grid: auto / auto auto; */
 }
 
 .bio-pic img {
+  position: relative;
+  top: 25%;
+  left: 25%;
   height: 50%;
+}
+
+.bio-summary {
+  justify-items: center;
 }
