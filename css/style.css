@@ -128,7 +128,7 @@ h1, h2 {
   display: grid;
   align-items: center;
   justify-items: center;
-  grid: auto / 50% 50%;
+  grid: auto / 1fr 1fr;
   /* grid: auto / auto auto; */
 }
 
@@ -151,7 +151,28 @@ h1, h2 {
 }
 
 .bio-text-box {
-  margin: auto;
+  margin: 0 10% 0 10%;
   grid: auto auto auto / 100%;
-  text-align: center;
+  justify-items: left;
+}
+
+.bio-text-box a {
+  display: grid;
+  margin: 5% 0 0 0;
+}
+
+.bio-text-box h2 {
+  margin-bottom: 2%;
+}
+
+@media only screen and (max-width: 680px) {
+  .main-info {
+    grid: 1fr 1fr / auto; 
+  }
+
+  .bio-text-box {
+    display: grid;
+    text-align: center;
+    justify-items: center;
+  }
 }
