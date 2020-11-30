@@ -102,7 +102,7 @@ h1, h2 {
   
 }
 
-.hero-btn {
+.btn {
   display: block;
   color: white;
   text-decoration: none;
@@ -116,7 +116,7 @@ h1, h2 {
   text-align: center;
 }
 
-.hero-btn:hover {
+.btn:hover {
   background-color: white;
   color: black;
   border: 1px solid black;
@@ -124,19 +124,34 @@ h1, h2 {
 }
 
 .main-info {
+  background-color: #F2F2F2;
   display: grid;
-  grid: auto / 50% 50%;
+  align-items: center;
   justify-items: center;
+  grid: auto / 50% 50%;
   /* grid: auto / auto auto; */
 }
 
+.bio-pic {
+  background-color: #F2F2F2;
+}
+
 .bio-pic img {
-  position: relative;
-  top: 25%;
-  left: 25%;
-  height: 50%;
+  margin-top: 25%;
+  margin-bottom: 25%;
+  box-shadow: 9px 9px 6px rgba(0, 0, 0, 25%);
 }
 
 .bio-summary {
+  display: flex;
   justify-items: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.bio-text-box {
+  margin: auto;
+  grid: auto auto auto / 100%;
+  text-align: center;
 }
