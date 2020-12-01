@@ -170,7 +170,7 @@ h1, h2 {
 /* Footer Nav CSS */
 
 footer {
-  height: 150vh;
+  height: 45vh;
   background-color: rgba(0, 0, 0);
 }
 
@@ -185,12 +185,76 @@ footer {
 }
 
 .footer-links li {
-  margin: 3% 2% 3% 2%;
+  padding: 0;
+  margin: 8% 3% 6% 3%;
 }
 
 footer li {
   justify-items: center;
 }
+
+.footer-logo {
+  padding: 0;
+}
+
+hr {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+  text-align: center;
+}
+
+/* .social-icons li {
+  position: relative;
+  padding: 0;
+  height: 10%;
+  width: 10%;
+} */
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 25%;
+  background: black;
+}
+
+.social-icons ul {
+  position: relative;
+  margin-top: 4%;
+  display: flex;
+}
+
+.social-icons ul li {
+  background-color: black;
+  position: relative;
+  list-style: none;
+}
+
+.social-icons li i {
+  background-color: transparent;
+}
+
+.social-icons ul li a {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 30px;
+  border-radius: 50%;
+  color: #e2e2e2;
+}
+
+/* .social-icons i {
+  height: 25%;
+  width: 25%;
+} */
 
 /* Media Query for Smaller Tablets & Phones. Will stack .main-info on top of .bio-summary */
 
