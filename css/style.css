@@ -170,11 +170,12 @@ h1, h2 {
 /* Footer Nav CSS */
 
 footer {
-  height: 45vh;
+  height: 35vh;
   background-color: rgba(0, 0, 0);
 }
 
 .footer-nav {
+  background-color: black;
   justify-items: center;
 }
 
@@ -186,7 +187,7 @@ footer {
 
 .footer-links li {
   padding: 0;
-  margin: 8% 3% 6% 3%;
+  margin: 8% 3% 8% 3%;
 }
 
 footer li {
@@ -198,19 +199,13 @@ footer li {
 }
 
 hr {
+  color: white;
   position: relative;
   margin-left: auto;
   margin-right: auto;
   width: 85%;
   text-align: center;
 }
-
-/* .social-icons li {
-  position: relative;
-  padding: 0;
-  height: 10%;
-  width: 10%;
-} */
 
 .social-icons {
   display: flex;
@@ -223,6 +218,7 @@ hr {
 .social-icons ul {
   position: relative;
   margin-top: 4%;
+  margin-bottom: 4%;
   display: flex;
 }
 
@@ -238,23 +234,18 @@ hr {
 
 .social-icons ul li a {
   position: relative;
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   background: #fff;
-  margin: 0 10px;
+  margin: 0 5%;
   text-decoration: none;
   font-size: 30px;
   border-radius: 50%;
   color: #e2e2e2;
 }
-
-/* .social-icons i {
-  height: 25%;
-  width: 25%;
-} */
 
 /* Media Query for Smaller Tablets & Phones. Will stack .main-info on top of .bio-summary */
 
@@ -281,6 +272,10 @@ hr {
 /* Media Query for Samsung Galaxy Fold Phones When Folded (Width = 280px) */
 
 @media only screen and (max-width: 315px) {
+  main {
+    width: 117%;
+  }
+
   .galaxy-fold-open-your-device {
     display: block !important;
     position: absolute;
@@ -288,8 +283,8 @@ hr {
     left: 0;
     right: 0;
     bottom: 0;
-    width: 318px;
-    height: 75vh;
+    width: 117%;
+    height: 98vh;
     text-align: center;
     background: #fff;
     z-index: 2147483647;
@@ -312,4 +307,45 @@ hr {
     margin: 0;
   }
   
+  footer {
+    width: 117%;
+  }
+
+}
+
+/* Media Query for Larger Cell Phones (Iphone X: 812px height) */
+
+@media only screen and (min-height: 800px) {
+  footer {
+    height: 30vh;
+  }
+}
+
+/* Media Query for footer element spacing on tablets & deskops */
+
+/* @media only screen and (min-height: 1000px) {
+  .footer-links li {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin: 0 3% 0 3%;
+  }
+
+  .footer-links ul {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin: 0;
+  }
+
+  footer {
+    height: 10vh;
+  }
+  
+} */
+
+/* Media Query for issue with hr line color on larger width screens */
+
+@media only screen and (min-width: 1740px) {
+  hr {
+    width: 100%;
+  }
 }
